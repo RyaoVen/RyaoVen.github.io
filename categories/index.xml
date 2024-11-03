@@ -7,21 +7,37 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>VenKing_Ryao-HEUN</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>测试</title>
+        <link>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</link>
+        <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>爬山</title>
+        <link>http://localhost:1313/categories/%E7%88%AC%E5%B1%B1/</link>
+        <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/%E7%88%AC%E5%B1%B1/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>文章</title>
+        <link>http://localhost:1313/categories/%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/%E6%96%87%E7%AB%A0/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Test</title>
         <link>http://localhost:1313/categories/test/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/test/</guid>
         <description>&lt;img src="http://localhost:1313/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</guid>
-        <description></description>
         </item>
         <item>
         <title>Syntax</title>
