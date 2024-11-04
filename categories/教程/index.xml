@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>教程 on VenKing_Ryao的个人博客</title>
+        <link>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</link>
+        <description>Recent content in 教程 on VenKing_Ryao的个人博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>VenKing_Ryao-HEUN</copyright>
+        <lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>我的世界JAVA版非局域网远程联机教程</title>
+        <link>http://localhost:1313/p/wdsj/</link>
+        <pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/wdsj/</guid>
+        <description>&lt;img src="http://localhost:1313/images/plc.png" alt="Featured image of post 我的世界JAVA版非局域网远程联机教程" /&gt;&lt;h2 id=&#34;准备阶段&#34;&gt;准备阶段
+&lt;/h2&gt;&lt;p&gt;首先，先准备一份客户端，确保你与你的朋友的客户端版本以及mod相同。&lt;/p&gt;
+&lt;h2 id=&#34;实现远程联机&#34;&gt;实现远程联机
+&lt;/h2&gt;&lt;h3 id=&#34;步骤1搜索樱花穿透&#34;&gt;步骤1：搜索樱花穿透
+&lt;/h3&gt;&lt;p&gt;我们将基于内网穿透来实现远程联机。请在百度搜索“樱花穿透”，访问官方网站：&lt;a class=&#34;link&#34; href=&#34;https://www.natfrp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sakura Frp&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;步骤2注册并登录&#34;&gt;步骤2：注册并登录
+&lt;/h3&gt;&lt;p&gt;在樱花穿透官方网站注册账号并登录。
+&lt;img src=&#34;http://localhost:1313/images/mianban.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;mianban&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤3下载樱花穿透应用程序&#34;&gt;步骤3：下载樱花穿透应用程序
+&lt;/h3&gt;&lt;p&gt;下载并安装樱花穿透应用程序。
+&lt;img src=&#34;http://localhost:1313/images/xiazai.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;dog&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤4签到获取流量&#34;&gt;步骤4：签到获取流量
+&lt;/h3&gt;&lt;p&gt;在管理面板首页签到，以获取免费流量。
+&lt;img src=&#34;http://localhost:1313/images/qiandao.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;dog&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤5获取授权码&#34;&gt;步骤5：获取授权码
+&lt;/h3&gt;&lt;p&gt;在管理面板首页获取授权码。
+&lt;img src=&#34;http://localhost:1313/images/miyao.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;dog&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤6使用授权码登录&#34;&gt;步骤6：使用授权码登录
+&lt;/h3&gt;&lt;p&gt;在樱花穿透应用程序上使用授权码登录。
+&lt;img src=&#34;http://localhost:1313/images/miyao.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;dog&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤7创建端口&#34;&gt;步骤7：创建端口
+&lt;/h3&gt;&lt;p&gt;创建端口，选择&lt;code&gt;TCP&lt;/code&gt;，下面设置改成“我的世界”。
+&lt;img src=&#34;http://localhost:1313/images/chuangjian.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;dog&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;步骤8完成设置&#34;&gt;步骤8：完成设置
+&lt;/h3&gt;&lt;p&gt;完成以上设置后，打开游戏，打开局域网链接（如果朋友使用盗版登录链接，请主机先下载联机mod，选择关闭正版验证）。&lt;/p&gt;
+&lt;h3 id=&#34;步骤9分享端口码&#34;&gt;步骤9：分享端口码
+&lt;/h3&gt;&lt;p&gt;复制樱花穿透应用程序中给出的端口码，发送给你的朋友让他输入到直接连接中，点击确定。
+&lt;img src=&#34;http://localhost:1313/images/duankou.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;dog&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果
+&lt;/h2&gt;&lt;p&gt;现在你成功实现用简单的内网穿透远程联机了！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
