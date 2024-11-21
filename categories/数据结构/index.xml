@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>数据结构 on VenKing_Ryao的个人博客</title>
+        <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+        <description>Recent content in 数据结构 on VenKing_Ryao的个人博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>VenKing_Ryao-HEUN</copyright>
+        <lastBuildDate>Thu, 21 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>数据结构算法积累</title>
+        <link>http://localhost:1313/p/c-/</link>
+        <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/c-/</guid>
+        <description>&lt;img src="http://localhost:1313/images/code1.jpg" alt="Featured image of post 数据结构算法积累" /&gt;&lt;p&gt;本质上算法只是一种思维方式，语言只是其载体，是故用任何语言积累数据结构都可以。因此笔者便不统一书写语言了，将写题时的随笔记下，也随便督促读者去多学点基础语法知识，毕竟技多不压身，能多学一点总是好的。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

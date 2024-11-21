@@ -352,6 +352,17 @@
         <li><a href="#全局函数友元">全局函数友元</a></li>
       </ol>
     </li>
+    <li><a href="#stl容器简略写点">STL容器（简略写点）</a>
+      <ol>
+        <li><a href="#基本语法">基本语法</a></li>
+        <li><a href="#stl容器的一些示例">STL容器的一些示例</a>
+          <ol>
+            <li><a href="#大数阶乘容器">大数阶乘（容器）</a></li>
+            <li><a href="#基于vector容器的素数查找">基于vector容器的素数查找</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -436,7 +447,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 9 分钟
+                    阅读时长: 11 分钟
                 </time>
             </div>
         
@@ -1667,7 +1678,255 @@
 </div>
 </div><p>当成员函数访问其他类中私有成员时，应如此声明：</p>
 <p><code>friend class01(成员函数所属的类)::void class01test ;</code></p>
-
+<h2 id="stl容器简略写点">STL容器（简略写点）
+</h2><h3 id="基本语法">基本语法
+</h3><p>创建容器： <code>vector &lt;数据类型&gt; 容器名 {数组内容};</code></p>
+<p>使用迭代器:<code>vector&lt;数据类型&gt;::iterators 地址名（类似于指针）= 取址函数 </code></p>
+<p>*<em><font style="background-color:rgba(255, 255, 255, 0);">元素的选取：<em>地址名  ||  容器名.at(元素的序号)  ||  容器名[元素的序号]</font></em></em></p>
+<p><strong><font style="background-color:rgba(255, 255, 255, 0);">取址函数（函数名之前加c会成为只读型）:</font></strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>begin()</th>
+<th>指向容器的第一个元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>end()</td>
+<td>指向元素的最后一个元素的后一位</td>
+</tr>
+<tr>
+<td>rbegin()</td>
+<td>倒序指向的begin()</td>
+</tr>
+<tr>
+<td>rend()</td>
+<td>倒序指向的end()</td>
+</tr>
+</tbody>
+</table></div>
+<p>容量函数：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>size()</th>
+<th>容器内元素的个数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>empty()</td>
+<td>若容器为空则返回true，否则返回false</td>
+</tr>
+<tr>
+<td>reserve()</td>
+<td>为容器预留不可访问的空间，减少容器追加空间的次数，降低运算复杂度（增大内存占用）</td>
+</tr>
+</tbody>
+</table></div>
+<p>修改函数：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>push_back</th>
+<th>在容器尾追加元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pop_back</td>
+<td>删除最后一个元素</td>
+</tr>
+<tr>
+<td>insert</td>
+<td>插入元素</td>
+</tr>
+<tr>
+<td>erase</td>
+<td>删除元素</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>清空容器</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>交换元素位置</td>
+</tr>
+<tr>
+<td>assign</td>
+<td>替换元素</td>
+</tr>
+<tr>
+<td>emplace</td>
+<td>更快的插入</td>
+</tr>
+<tr>
+<td>emplace_back</td>
+<td>更快的追加元素</td>
+</tr>
+</tbody>
+</table></div>
+<p>各种容器之间的用途与区别：</p>
+<p>list ：双向链表，可以快速的插入与删除某一元素，遍历和空间占用差</p>
+<p>vector ：动态指针，可以自动扩容，遍历最快</p>
+<p>deque ：可以在头尾分别操作元素，但是速度慢于vector</p>
+<p>stack ：类似于羽毛球筒，只能调用和访问最顶上的数据，数据存储在栈区</p>
+<p>queue ：类似于队伍，只能访问两端元素，不可遍历，只能向一端插入一端删除。</p>
+<p>set与multiset ：数组，可以遍历，会自动排序，前者元素不可重复，后者可以.</p>
+<h3 id="stl容器的一些示例">STL容器的一些示例
+</h3><h4 id="大数阶乘容器">大数阶乘（容器）
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">val</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">temp1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">temp2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;请输入n： &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">v1</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">v1</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="o">=</span> <span class="n">v1</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="n">temp2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp2</span> <span class="o">=</span> <span class="n">v1</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">v1</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="o">=</span> <span class="n">v1</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">%</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="n">temp2</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">v1</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">temp2</span><span class="o">%</span><span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">temp2</span> <span class="o">=</span> <span class="n">temp2</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">v1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="n">v1</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">system</span><span class="p">(</span><span class="s">&#34;pause&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="基于vector容器的素数查找">基于vector容器的素数查找
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test01</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">times</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="o">*</span><span class="n">it</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">flag</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">it</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">flag</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34; &#34;</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">times</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">times</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">times</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span><span class="kt">int</span> <span class="n">times</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;请输入你所需要查找的素数范围（0~n）：&#34;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">times</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">test01</span><span class="p">(</span><span class="n">times</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">system</span><span class="p">(</span><span class="s">&#34;pause&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">           <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -1700,6 +1959,25 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/suanfa/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/studying1.jpg" loading="lazy" data-key="suanfa" data-hash="/images/studying1.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数据结构算法积累</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
