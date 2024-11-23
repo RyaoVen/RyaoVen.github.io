@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Boy on VenKing_Ryao的个人博客</title>
+        <link>http://localhost:1313/categories/boy/</link>
+        <description>Recent content in Boy on VenKing_Ryao的个人博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>VenKing_Ryao-HEUN</copyright>
+        <lastBuildDate>Thu, 21 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/boy/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>vscode的c&#43;&#43;环境搭建</title>
+        <link>http://localhost:1313/p/vscode/</link>
+        <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/vscode/</guid>
+        <description>&lt;img src="http://localhost:1313/images/vscode1.png" alt="Featured image of post vscode的c&#43;&#43;环境搭建" /&gt;&lt;h2 id=&#34;一下载vscode&#34;&gt;一.下载vscode
+&lt;/h2&gt;&lt;h3 id=&#34;1打开httpscodevisualstudiocomdownload-下载vscode&#34;&gt;1.打开：https://code.visualstudio.com/download  下载vscode
+&lt;/h3&gt;&lt;h3 id=&#34;2下载后根据引导进行安装能勾选的都可以勾选上&#34;&gt;2.下载后根据引导进行安装（能勾选的都可以勾选上）
+&lt;/h3&gt;&lt;h3 id=&#34;3打开vscode点击左侧4个正方形组成的图案在左侧的搜索框中输入chinese点击install即可将页面改成中文&#34;&gt;3.打开vscode，点击左侧4个正方形组成的图案，在左侧的搜索框中输入chinese，点击install即可将页面改成中文
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二配置vscode&#34;&gt;二.配置vscode
+&lt;/h2&gt;&lt;h3 id=&#34;1打开httpssourceforgenetprojectsmingw-w64&#34;&gt;1.打开:https://sourceforge.net/projects/mingw-w64/
+&lt;/h3&gt;&lt;h3 id=&#34;2不要点击download点击download下的files再依次点击tollchains-targetting-win64personal-buildsmingw-builds810threads-posix最后下载&#34;&gt;2.不要点击download，点击download下的files，再依次点击Tollchains targetting Win64,Personal Builds,mingw builds,8.1.0,threads posix,最后下载
+&lt;/h3&gt;&lt;h3 id=&#34;3将下载后的文件解压解压完后点击解压后的文件中的bin复制这个文件的路径&#34;&gt;3.将下载后的文件解压，解压完后点击解压后的文件中的bin，复制这个文件的路径
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4在搜索框中输入环境变量点击编辑系统环境变量然后再点击环境变量&#34;&gt;4.在搜索框中输入环境变量，点击编辑系统环境变量，然后再点击环境变量
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5点击选择path点击编辑点击新建并把刚才复制的路径粘贴进去再连点3个确定&#34;&gt;5.点击选择path，点击编辑，点击新建，并把刚才复制的路径粘贴进去，再连点3个确定
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三开始写代码&#34;&gt;三.开始写代码
+&lt;/h2&gt;&lt;h3 id=&#34;1打开vscode再次点击左侧4个正方形组成的图案搜索c下载第一个然后在一个全英文路径的地方创建一个英文文件夹将其复制到桌面&#34;&gt;1.打开vscode，再次点击左侧4个正方形组成的图案，搜索c，下载第一个，然后在一个全英文路径的地方创建一个英文文件夹，将其复制到桌面
+&lt;/h3&gt;&lt;h3 id=&#34;2再将其拖至vscode的资源管理器里然后便可以点击新建文件并命名c语言在新建文件名后加cc加cpp&#34;&gt;2.再将其拖至vscode的资源管理器里，然后便可以点击新建文件，并命名，c语言在新建文件名后加.c，c++加.cpp
+&lt;/h3&gt;&lt;h3 id=&#34;3写完代码后按住ctrlshiftp在弹出的搜索框里输入cc找到编辑配置uiedit-configurationsui点击再在指定编译器路径中选择我们之前复制的路径再在下面intellsence模式里选择gcc-x64legacy或者gcc-x64&#34;&gt;3.写完代码后按住ctrl+shift+p，在弹出的搜索框里输入c/c++，找到编辑配置UI（Edit Configurations（UI）），点击，再在指定编译器路径中选择我们之前复制的路径，再在下面intellsence模式里选择gcc-x64（legacy）或者gcc-x64
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4再在我们之前下载中文包的地方搜索code-runner下完后右上角会有个三角形点击即可运行代码&#34;&gt;4.再在我们之前下载中文包的地方搜索code runner,下完后右上角会有个三角形，点击，即可运行代码
+&lt;/h3&gt;&lt;p&gt;___by Boy&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

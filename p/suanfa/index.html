@@ -10,7 +10,7 @@
 <meta property='og:description' content="洛谷刷题随记">
 <meta property='og:url' content='http://localhost:1313/p/suanfa/'>
 <meta property='og:site_name' content='VenKing_Ryao的个人博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-11-21T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/images/studying1.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-23T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-11-23T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/images/studying1.jpg' />
 <meta name="twitter:title" content="数据结构算法积累">
 <meta name="twitter:description" content="洛谷刷题随记"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='http://localhost:1313/images/studying1.jpg' />
@@ -294,11 +294,21 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#画饼-缓慢更新中可以催更">画饼 （缓慢更新中，可以催更）</a>
+      <ol>
+        <li><a href="#数据结构">数据结构：</a></li>
+        <li><a href="#算法">算法：</a></li>
+        <li><a href="#更复杂的数据结构">更复杂的数据结构：</a></li>
+        <li><a href="#高级算法技巧">高级算法技巧：</a></li>
+      </ol>
+    </li>
     <li><a href="#查找">查找</a>
       <ol>
         <li><a href="#二分查找">二分查找</a></li>
       </ol>
     </li>
+    <li><a href="#动态规划臭名昭著的dp">动态规划(<del>臭名昭著的</del>DP)</a></li>
+    <li><a href="#heading"></a></li>
   </ol>
 </nav>
         </div>
@@ -368,7 +378,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Nov 21, 2024</time>
+                <time class="article-time--published">Nov 23, 2024</time>
             </div>
         
 
@@ -383,7 +393,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -399,17 +409,257 @@
     
     
     <p>本质上算法只是一种思维方式，语言只是其载体，是故用任何语言积累数据结构都可以。因此笔者便不统一书写语言了，将写题时的随笔记下，也随便督促读者去多学点基础语法知识，毕竟技多不压身，能多学一点总是好的。</p>
+<h2 id="画饼-缓慢更新中可以催更">画饼 （缓慢更新中，可以催更）
+</h2><p>基础的数据结构和算法是计算机科学中的核心概念，以下是一些常见的数据结构和算法分类：</p>
+<h3 id="数据结构">数据结构：
+</h3><ol>
+<li><strong>数组（Array）</strong>：一种基础的数据结构，用于存储一系列相同类型的数据。</li>
+<li><strong>链表（Linked List）</strong>：
+<ul>
+<li>单链表</li>
+<li>双链表</li>
+<li>循环链表</li>
+</ul>
+</li>
+<li><strong>栈（Stack）</strong>：后进先出（LIFO）的数据结构。</li>
+<li><strong>队列（Queue）</strong>：先进先出（FIFO）的数据结构。
+<ul>
+<li>循环队列</li>
+<li>双端队列（Deque）</li>
+</ul>
+</li>
+<li><strong>树（Tree）</strong>：
+<ul>
+<li>二叉树</li>
+<li>平衡二叉树（AVL树）</li>
+<li>红黑树</li>
+<li>B树、B+树</li>
+<li>堆（Heap）</li>
+</ul>
+</li>
+<li><strong>图（Graph）</strong>：
+<ul>
+<li>有向图</li>
+<li>无向图</li>
+<li>加权图</li>
+<li>连通图</li>
+</ul>
+</li>
+<li><strong>哈希表（Hash Table）</strong>：通过哈希函数实现快速查找的数据结构。</li>
+<li><strong>集合（Set）</strong>：一种抽象数据类型，用于存储无序且不重复的元素。</li>
+<li><strong>字典（Dictionary）/映射（Map）</strong>：一种抽象数据类型，用于存储键值对。</li>
+</ol>
+<h3 id="算法">算法：
+</h3><ol>
+<li>
+<p><strong>排序算法</strong>：</p>
+<ul>
+<li>冒泡排序</li>
+<li>选择排序</li>
+<li>插入排序</li>
+<li>快速排序</li>
+<li>归并排序</li>
+<li>堆排序</li>
+<li>希尔排序</li>
+<li>计数排序</li>
+<li>基数排序</li>
+</ul>
+</li>
+<li>
+<p><strong>搜索算法</strong>：</p>
+<ul>
+<li>顺序搜索</li>
+<li>二分搜索</li>
+<li>深度优先搜索（DFS）</li>
+<li>广度优先搜索（BFS）</li>
+<li>A*搜索</li>
+<li>贪心搜索</li>
+</ul>
+</li>
+<li>
+<p><strong>字符串匹配算法</strong>：</p>
+<ul>
+<li>朴素字符串匹配</li>
+<li>KMP算法</li>
+<li>Rabin-Karp算法</li>
+<li>Boyer-Moore算法</li>
+</ul>
+</li>
+<li>
+<p><strong>图算法</strong>：</p>
+<ul>
+<li>拓扑排序</li>
+<li>最短路径算法（Dijkstra、Bellman-Ford、Floyd-Warshall）</li>
+<li>最小生成树算法（Prim、Kruskal）</li>
+</ul>
+</li>
+</ol>
+<h3 id="更复杂的数据结构">更复杂的数据结构：
+</h3><ol>
+<li><strong>跳表（Skip List）</strong>：用于快速查找的有序数据结构，可以看作是多层链表的结合。</li>
+<li><strong>并查集（Union-Find）</strong>：一种数据结构，用于处理一些不交集的合并及查询问题。</li>
+<li><strong>线段树（Segment Tree）</strong>：用于高效解决区间查询和更新问题。</li>
+<li><strong>树状数组（Binary Indexed Tree）/斐波那契堆（Fibonacci Heap）</strong>：用于高效处理范围查询和动态修改的问题。</li>
+<li><strong>Trie（前缀树）</strong>：用于高效地存储和检索字符串数据集中的键。</li>
+<li><strong>布隆过滤器（Bloom Filter）</strong>：一种空间效率极高的数据结构，用于测试一个元素是否属于集合，有可能会出现误判。</li>
+<li><strong>LSM树（Log-Structured Merge-Tree）</strong>：通常用于键值存储系统中，例如LevelDB和Cassandra。</li>
+<li><strong>倒排索引（Inverted Index）</strong>：常用于全文搜索引擎，如Elasticsearch和Solr。</li>
+</ol>
+<h3 id="高级算法技巧">高级算法技巧：
+</h3><ol>
+<li>
+<p><strong>分治算法（Divide and Conquer）</strong>：将问题分解成若干个小问题递归求解，然后再合并结果。</p>
+</li>
+<li>
+<p><strong>动态规划（Dynamic Programming）</strong>：</p>
+<ul>
+<li>斐波那契数列</li>
+<li>最长公共子序列（LCS）</li>
+<li>最长递增子序列（LIS）</li>
+<li>0-1背包问题</li>
+<li>编辑距离（Levenshtein距离）</li>
+</ul>
+</li>
+<li>
+<p><strong>贪心算法（Greedy Algorithms）</strong>：</p>
+<ul>
+<li>最小生成树（Prim、Kruskal）</li>
+<li>哈夫曼编码</li>
+</ul>
+</li>
+<li>
+<p><strong>回溯算法（Backtracking）</strong>：</p>
+<ul>
+<li>N皇后问题</li>
+<li>子集和问题</li>
+<li>组合问题</li>
+</ul>
+</li>
+<li>
+<p><strong>分支限界法（Branch and Bound）</strong>：</p>
+<ul>
+<li>旅行商问题（TSP）</li>
+<li>零一背包问题</li>
+</ul>
+</li>
+<li>
+<p><strong>启发式算法（Heuristic Algorithms）</strong>：</p>
+<ul>
+<li>A*搜索算法</li>
+<li>蚁群优化（ACO）</li>
+<li>粒子群优化（PSO）</li>
+</ul>
+</li>
+<li>
+<p><strong>随机化算法（Randomized Algorithms）</strong>：</p>
+<ul>
+<li>蒙特卡洛算法</li>
+<li>拉斯维加斯算法</li>
+<li>跳跃表</li>
+</ul>
+</li>
+<li>
+<p><strong>近似算法（Approximation Algorithms）</strong>：</p>
+<ul>
+<li>用于在多项式时间内找到近似最优解的算法，适用于NP难问题。</li>
+</ul>
+</li>
+<li>
+<p><strong>流算法（Streaming Algorithms）</strong>：</p>
+<ul>
+<li>用于处理大量数据流的算法，通常只需要一次或几次数据遍历。</li>
+</ul>
+</li>
+<li>
+<p><strong>字符串匹配算法</strong>：</p>
+<ul>
+<li>后缀数组</li>
+<li>后缀树</li>
+<li>正则表达式匹配</li>
+</ul>
+</li>
+</ol>
 <h2 id="查找">查找
 </h2><p>通常的，在我们需要进行查找时，使用遍历查找一个一个检查过去便能满足我们的需求，在数据量很小时使用其他的方法甚至会使代码的时间复杂度上升，但当我们处理大数据量时，遍历的效率过于低下，因此我们需要一些特殊的方法进行查找：</p>
 <h3 id="二分查找">二分查找
 </h3><p>二分查找的核心思路是高中数学中的二分法，每次取范围的百分之50，可以快速锁定目标数据所处区间。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code></code></pre></td>
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 二分查找函数
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">// nums - 有序数组
+</span></span></span><span class="line"><span class="cl"><span class="c1">// target - 要查找的目标值
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回值：
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 目标值在数组中的索引，如果未找到则返回-1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">nums</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>        <span class="c1">// 查找范围的左边界
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 查找范围的右边界
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 当左边界小于等于右边界时继续查找
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// 计算中间位置，避免直接相加可能导致的溢出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 如果中间位置的元素等于目标值，返回中间位置的索引
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 如果中间位置的元素小于目标值，将左边界设置为中间位置加一
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// 因为中间位置的元素已经不可能是目标值了，所以可以排除这部分
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 如果中间位置的元素大于目标值，将右边界设置为中间位置减一
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">// 同样，中间位置的元素已经不可能是目标值了，排除这部分
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 如果循环结束仍未找到目标值，返回-1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><p>简而言之，二分查找的思路如下：首先确定查找范围的边界，然后取中间值并与目标值比较，然后将边界迁移至目标值所在的范围内，重复以下操作，以最终确定目标值的位置。
+<code>注：二分查找的前提是所有元素有序排列。</code></p>
+<h2 id="动态规划臭名昭著的dp">动态规划(<del>臭名昭著的</del>DP)
+</h2><h2 id="heading">
+</h2>
 </section>
 
 
@@ -442,6 +692,25 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/py/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/studying1.jpg" loading="lazy" data-key="py" data-hash="/images/studying1.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python语法笔记</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -641,6 +910,17 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: []
+});
 </script>
 
     </body>
