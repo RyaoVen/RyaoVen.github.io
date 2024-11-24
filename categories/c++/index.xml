@@ -13,9 +13,9 @@
         <pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/c-/</guid>
-        <description>&lt;img src="http://localhost:1313/images/code1.jpg" alt="Featured image of post C&#43;&#43;语法笔记" /&gt;&lt;p&gt;&lt;code&gt;前言：&lt;/code&gt;&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/images/code1.jpg" alt="Featured image of post C&#43;&#43;语法笔记" /&gt;&lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;虽然许多人都说c++是最难学的语言，笔者也的确承认这一点，但是笔者认为，c++反而是最能锻炼一个人程序编写能力的语言。c++将内存之类的一般由编译器控制的结构开放给程序员，使其拥有对程序更为慎密操作能力。虽然对大多数初学者来说，其极易出错的各类复杂语法简直就是噩梦，但是当养成了精细控制内存的好习惯后，再去使用其他语言时，则会有一种别样的体验。&lt;del&gt;为什么我早不学这玩意，硬是要去啃c++这反人类的垃圾东西（红温症状）&lt;/del&gt;，拥有一种别样的舒适感。&lt;/p&gt;
-&lt;p&gt;笔记中仅仅记录了些许难点，深点与在经常使用c++进行面向过程&lt;del&gt;结果&lt;/del&gt;编程时容易遗忘的点。（拿c++面向对象写大东西时候用的）&lt;/p&gt;
+&lt;p&gt;笔记中仅仅记录了些许难点，深点与在经常使用c++进行面向过程编程时容易遗忘的点。（拿c++面向对象写大东西时候用的）&lt;/p&gt;
 &lt;p&gt;如果要系统性的学习c++，笔者建议去b站看些黑马程序员的课，笔记作为补充或强调的一部分。&lt;/p&gt;
 &lt;h2 id=&#34;文件的读写&#34;&gt;文件的读写
 &lt;/h2&gt;&lt;h3 id=&#34;c用二进制写入读取文件与普通方法写入读取文件的区别&#34;&gt;c++用二进制写入读取文件与普通方法写入读取文件的区别
