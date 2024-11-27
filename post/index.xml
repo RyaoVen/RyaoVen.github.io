@@ -7,23 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>VenKing_Ryao-HEUN</copyright>
-        <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Python语法笔记</title>
-        <link>http://localhost:1313/p/py/</link>
-        <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/p/py/</guid>
-        <description>&lt;img src="http://localhost:1313/images/studying1.jpg" alt="Featured image of post Python语法笔记" /&gt;&lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;憋看了，现在哪有时间写，忙着数据结构跟期末考试，寒假开坑。&lt;/p&gt;
-&lt;h2 id=&#34;python学习前置&#34;&gt;Python学习前置
-&lt;/h2&gt;&lt;h3 id=&#34;环境配置&#34;&gt;环境配置
-&lt;/h3&gt;&lt;h3 id=&#34;ide安装与使用教程&#34;&gt;IDE安装与使用教程
-&lt;/h3&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Sun, 24 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>数据结构算法积累</title>
         <link>http://localhost:1313/p/suanfa/</link>
-        <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/suanfa/</guid>
         <description>&lt;img src="http://localhost:1313/images/studying1.jpg" alt="Featured image of post 数据结构算法积累" /&gt;&lt;p&gt;本质上算法只是一种思维方式，语言只是其载体，是故用任何语言积累数据结构都可以。因此笔者便不统一书写语言了，将写题时的随笔记下，也随便督促读者去多学点基础语法知识，毕竟技多不压身，能多学一点总是好的。&lt;/p&gt;
@@ -276,11 +263,17 @@
 &lt;/div&gt;&lt;p&gt;简而言之，二分查找的思路如下：首先确定查找范围的边界，然后取中间值并与目标值比较，然后将边界迁移至目标值所在的范围内，重复以下操作，以最终确定目标值的位置。
 &lt;code&gt;注：二分查找的前提是所有元素有序排列。&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;动态规划臭名昭著的dp&#34;&gt;动态规划(&lt;del&gt;臭名昭著的&lt;/del&gt;DP)
-&lt;/h2&gt;&lt;h2 id=&#34;差分法&#34;&gt;差分法
-&lt;/h2&gt;&lt;p&gt;差分法一般用于减小一维数组的运算量，假设这里有一个长度为n的数组a，那么我们建立一个数组diff_a用于记录a[i]与a[i+1]的差值，这个差值本身就是差分。&lt;/p&gt;
-&lt;p&gt;例如这里有一个非常长的数组a，我们要在a[x]到a&lt;a class=&#34;link&#34; href=&#34;x%e4%ba%8ey%e4%b9%8b%e9%97%b4%e7%9a%84%e8%b7%9d%e7%a6%bb%e4%b9%9f%e9%9d%9e%e5%b8%b8%e9%95%bf&#34; &gt;y&lt;/a&gt;，我们要对这一堆数据进行相同的操作，例如加减赋值，在这里我们就以加值为例。因为a[i]可以用diff[i-1]到diff[i]+a[1]的累加和表示，所以当我们为diff[i-1]加上一个值后，在a[i]本身与之后所有用差分还原的值均加上了这个值，反之可以在a[i]本身与之后减去这个值。&lt;/p&gt;
+&lt;/h2&gt;&lt;h2 id=&#34;数组&#34;&gt;数组
+&lt;/h2&gt;&lt;p&gt;计算机与数学本身是有机结合的，在计算机算法中的许多结构可以看见数学的影子。&lt;/p&gt;
+&lt;h3 id=&#34;差分法&#34;&gt;差分法
+&lt;/h3&gt;&lt;p&gt;差分法一般用于减小一维数组的运算量，假设这里有一个长度为n的数组a，那么我们建立一个数组diff_a用于记录a[i]与a[i+1]的差值，这个差值本身就是差分。&lt;/p&gt;
+&lt;p&gt;例如这里有一个非常长的数组a，我们要在a[x]到a[y] (x于y之间的距离也非常长) ，我们要对这一堆数据进行相同的操作，例如加减赋值，在这里我们就以加值为例。因为a[i]可以用diff[i-1]到diff[i]+a[1]的累加和表示，所以当我们为diff[i-1]加上一个值后，在a[i]本身与之后所有用差分还原的值均加上了这个值，反之可以在a[i]本身与之后减去这个值。&lt;/p&gt;
 &lt;p&gt;利用这一点，我们便可以在diff[x-1]处加上这个值，在diff[y-1]处减去这个值，以完成在a[x]到a[y]处的加值操作。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;以下是洛谷例题示例：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;待会写。&lt;/p&gt;
+&lt;h3 id=&#34;前缀法&#34;&gt;前缀法
+&lt;/h3&gt;&lt;p&gt;与差分法类似，前缀法旨在用前n项累加的和表示数组，即&lt;code&gt;a[n] = sum_a[a] - sum_a[a-1]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;基于一维数组的前缀和主要应用场景是可以在O(1)情况下求出任何区间内的和。&lt;/p&gt;
 </description>
         </item>
         <item>

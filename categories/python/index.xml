@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>VenKing_Ryao-HEUN</copyright>
-        <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 27 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python语法笔记</title>
         <link>http://localhost:1313/p/py/</link>
-        <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/py/</guid>
         <description>&lt;img src="http://localhost:1313/images/studying1.jpg" alt="Featured image of post Python语法笔记" /&gt;&lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;&lt;/p&gt;
@@ -18,7 +18,77 @@
 &lt;h2 id=&#34;python学习前置&#34;&gt;Python学习前置
 &lt;/h2&gt;&lt;h3 id=&#34;环境配置&#34;&gt;环境配置
 &lt;/h3&gt;&lt;h3 id=&#34;ide安装与使用教程&#34;&gt;IDE安装与使用教程
-&lt;/h3&gt;</description>
+&lt;/h3&gt;&lt;h2 id=&#34;path_one&#34;&gt;Path_One
+&lt;/h2&gt;&lt;p&gt;别的先不管，老规矩，先写一个hello world。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print(&amp;#34;hello world&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;很简单吧，对，简单，这就是Python的特性。&lt;/p&gt;
+&lt;h3 id=&#34;基础知识&#34;&gt;基础知识
+&lt;/h3&gt;&lt;p&gt;&amp;ldquo;AMD yes&amp;rdquo; 用双引号括起来的文字是字符串。&lt;/p&gt;
+&lt;p&gt;10086这是一段整数，名字叫做整形（int）&lt;/p&gt;
+&lt;p&gt;114.514这是一段小数，名字叫做浮点数（float）&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;这是字符串&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;这也是字符串&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注释：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;注释的作用是写在程序文件里来描述信息（给人看的，&lt;del&gt;你觉得你以后看得懂有种就不写&lt;/del&gt;）&lt;/p&gt;
+&lt;p&gt;格式是这样子的：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 这是单行注释
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;是
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;多
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;行
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;注
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;释
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;多行注释可以用变量来接受字符串。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;变量：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;money = 0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;money是什么？&lt;/p&gt;
+&lt;p&gt;money是一个变量，用于存储一个数据。变量不能使用关键字命名，不能以数字开头，只能包含中文，英文，数字，下划线。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;数据类型转换：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;int()&lt;/code&gt;这是强转整数&lt;br&gt;
+&lt;code&gt;str()&lt;/code&gt;这是强转字符串&lt;br&gt;
+&lt;code&gt;float()&lt;/code&gt;这是强转浮点数&lt;br&gt;
+注意：浮点数转整形会丢失小数位；数字可以强转字符串，字符串不一定能强转数字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;运算符：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;+ - * /&lt;/code&gt;这些是加减乘除。&lt;code&gt;//&lt;/code&gt;这是整除&lt;code&gt;%&lt;/code&gt;这是取余除法&lt;code&gt;**&lt;/code&gt;这是指数运算。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;=&lt;/code&gt;这是赋值运算符，上面的运算符加上赋值运算符等于他本身与这个数运算。例如： &lt;code&gt;a = a +b 等效于 a += b&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;print()函数的用法：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你可以这样拼接字符串类型：
+&lt;code&gt;wao = &amp;quot;!&amp;quot;&lt;/code&gt;
+&lt;code&gt;print(&amp;quot;AMD&amp;quot;+&amp;quot;yes&amp;quot;+wao)&lt;/code&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>

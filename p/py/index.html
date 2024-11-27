@@ -10,10 +10,10 @@
 <meta property='og:description' content="教程向">
 <meta property='og:url' content='http://localhost:1313/p/py/'>
 <meta property='og:site_name' content='VenKing_Ryao的个人博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-23T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-11-23T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/images/studying1.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-11-27T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/images/py_0-1.png' />
 <meta name="twitter:title" content="Python语法笔记">
 <meta name="twitter:description" content="教程向"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/images/studying1.jpg' />
+    <meta name="twitter:image" content='http://localhost:1313/images/py_0-1.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
   
@@ -300,6 +300,18 @@
         <li><a href="#ide安装与使用教程">IDE安装与使用教程</a></li>
       </ol>
     </li>
+    <li><a href="#path_one">Path_One</a>
+      <ol>
+        <li><a href="#基础知识">基础知识</a>
+          <ol>
+            <li><a href="#一些前置概念">一些前置概念</a></li>
+            <li><a href="#输出">输出</a></li>
+            <li><a href="#输入">输入</a></li>
+            <li><a href="#比较">比较</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -316,7 +328,7 @@
         <div class="article-image">
             <a href="/p/py/">
                 
-                    <img src="/images/studying1.jpg" loading="lazy" alt="Featured image of post Python语法笔记" />
+                    <img src="/images/py_0-1.png" loading="lazy" alt="Featured image of post Python语法笔记" />
                 
             </a>
         </div>
@@ -373,7 +385,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Nov 23, 2024</time>
+                <time class="article-time--published">Nov 27, 2024</time>
             </div>
         
 
@@ -408,7 +420,218 @@
 <h2 id="python学习前置">Python学习前置
 </h2><h3 id="环境配置">环境配置
 </h3><h3 id="ide安装与使用教程">IDE安装与使用教程
-</h3>
+</h3><h2 id="path_one">Path_One
+</h2><p>别的先不管，老规矩，先写一个hello world。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">print(&#34;hello world&#34;)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>很简单吧，对，简单，这就是Python的特性。</p>
+<h3 id="基础知识">基础知识
+</h3><h4 id="一些前置概念">一些前置概念
+</h4><p>&ldquo;AMD yes&rdquo; 用双引号括起来的文字是字符串。</p>
+<p>10086这是一段整数，名字叫做整形（int）</p>
+<p>114.514这是一段小数，名字叫做浮点数（float）</p>
+<p>&ldquo;这是字符串&rdquo;</p>
+<p>&lsquo;这也是字符串&rsquo;</p>
+<p><strong>注释：</strong></p>
+<p>注释的作用是写在程序文件里来描述信息（给人看的，<del>你觉得你以后看得懂有种就不写</del>）</p>
+<p>格式是这样子的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 这是单行注释
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">这
+</span></span><span class="line"><span class="cl">是
+</span></span><span class="line"><span class="cl">多
+</span></span><span class="line"><span class="cl">行
+</span></span><span class="line"><span class="cl">注
+</span></span><span class="line"><span class="cl">释
+</span></span><span class="line"><span class="cl">&#34;&#34;&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>多行注释可以用变量来接受字符串。</p>
+<p><strong>变量：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">money = 0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>money是什么？</p>
+<p>money是一个变量，用于存储一个数据。变量不能使用关键字命名，不能以数字开头，只能包含中文，英文，数字，下划线。</p>
+<p><strong>数据类型转换：</strong></p>
+<p><code>int()</code>这是强转整数<br>
+<code>str()</code>这是强转字符串<br>
+<code>float()</code>这是强转浮点数<br>
+注意：浮点数转整形会丢失小数位；数字可以强转字符串，字符串不一定能强转数字。</p>
+<p><strong>运算符：</strong></p>
+<p><code>+ - * /</code>这些是加减乘除。<code>//</code>这是整除<code>%</code>这是取余除法<code>**</code>这是指数运算。</p>
+<p><code>=</code>这是赋值运算符，上面的运算符加上赋值运算符等于他本身与这个数运算。例如： <code>a = a +b</code> 等效于 <code>a += b</code></p>
+<h4 id="输出">输出
+</h4><p><strong>print()函数的用法：</strong></p>
+<p>你可以这样拼接字符串类型：<br>
+<code>wao = &quot;!&quot;</code><br>
+<code>print(&quot;AMD&quot;+&quot;yes&quot;+wao)</code><br>
+但是如果有数字呢？   那就这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">amd = 5700
+</span></span><span class="line"><span class="cl">print(&#34;R%s&#34; % amd)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里的<code>%s</code>是字符串类型占位符的意思，除了字符串类型，还有以下几个类型：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">格式符号</th>
+<th style="text-align:center">转化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">%s</td>
+<td style="text-align:center">将内容转换成字符串，放入占位位置</td>
+</tr>
+<tr>
+<td style="text-align:center">%d</td>
+<td style="text-align:center">将内容转换成整数，放入占位位置</td>
+</tr>
+<tr>
+<td style="text-align:center">%f</td>
+<td style="text-align:center">将内容转换成浮点型，放入占位位置</td>
+</tr>
+</tbody>
+</table></div>
+<p>我们可以使用辅助符号&quot;m.n&quot;来控制数据的宽度和精度</p>
+<ul>
+<li>m，控制宽度，要求是数字（很少使用），设置的宽度小于数字自身，不生效</li>
+<li>n，控制小数点精度，要求是数字，会进行小数的四舍五入
+示例：</li>
+<li>%5d：表示将整数的宽度控制在5位，如数字11，被设置为%5d，就会变成：[空格][空格][空格]11，用三个空格补足宽度。</li>
+<li>%5.2f：表示将宽度控制为5，将小数点精度设置为2</li>
+</ul>
+<p>或者也可以这样子写：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">year = 2024
+</span></span><span class="line"><span class="cl">date = &#34;11月28日&#34;
+</span></span><span class="line"><span class="cl">print(f&#34;今天是{year}年{date}&#34;)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果是这样子的：
+<img src="/images/py_1-1.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="效果"
+	
+	
+></p>
+<h4 id="输入">输入
+</h4><p><strong>input()函数的用法</strong></p>
+<p>当你使用这个函数时，程序会自动间断，以等待用户输入，示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">print(&#34;请告诉我你是谁：&#34;)
+</span></span><span class="line"><span class="cl">name = input()
+</span></span><span class="line"><span class="cl">print(f&#34;原来你是{name}啊。&#34;)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果是这样子的：<br>
+<img src="/images/py_1-2.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="效果"
+	
+	
+></p>
+<p>当然你也可以在input()的括号里写上要前缀的内容，比如这样：<br>
+<code>input(&quot;你：&quot;)</code></p>
+<h4 id="比较">比较
+</h4><h5 id="布尔数据类型">布尔数据类型
+</h5><h5 id="比较预算符">比较预算符
+</h5><div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>判断内容是否相等，满足为True，不满足为False</td>
+<td>如a=3,b=3，则(a == b) 为 True</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>判断内容是否不相等，满足为True，不满足为False</td>
+<td>如a=1,b=3，则(a != b) 为 True</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>判断运算符左侧内容是否大于右侧，满足为True，不满足为False</td>
+<td>如a=7,b=3，则(a &gt; b) 为 True</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>判断运算符左侧内容是否小于右侧，满足为True，不满足为False</td>
+<td>如a=3,b=7，则(a &lt; b) 为 True</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>判断运算符左侧内容是否大于等于右侧，满足为True，不满足为False</td>
+<td>如a=3,b=3，则(a &gt;= b) 为 True</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>判断运算符左侧内容是否小于等于右侧，满足为True，不满足为False</td>
+<td>如a=3,b=3，则(a &lt;= b) 为 True</td>
+</tr>
+</tbody>
+</table></div>
+<p>写累了就先这样吧   （11.28_2:13</p>
+
 </section>
 
 

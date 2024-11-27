@@ -7,20 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>VenKing_Ryao-HEUN</copyright>
-        <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Python语法笔记</title>
-        <link>http://localhost:1313/p/py/</link>
-        <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/p/py/</guid>
-        <description>&lt;img src="http://localhost:1313/images/studying1.jpg" alt="Featured image of post Python语法笔记" /&gt;&lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;憋看了，现在哪有时间写，忙着数据结构跟期末考试，寒假开坑。&lt;/p&gt;
-&lt;h2 id=&#34;python学习前置&#34;&gt;Python学习前置
-&lt;/h2&gt;&lt;h3 id=&#34;环境配置&#34;&gt;环境配置
-&lt;/h3&gt;&lt;h3 id=&#34;ide安装与使用教程&#34;&gt;IDE安装与使用教程
-&lt;/h3&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Thu, 21 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>vscode的c&#43;&#43;环境搭建</title>
         <link>http://localhost:1313/p/vscode/</link>
         <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
